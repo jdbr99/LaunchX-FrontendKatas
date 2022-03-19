@@ -1,0 +1,360 @@
+:root {
+    --niceblue: rgb(31, 62, 114);
+    --highlight: rgb(55, 87, 213);
+    --alpha-highlight: rgba(55, 87, 213, 0.05);
+    --text-color: rgb(109, 123, 147);
+    --icon-background: rgb(241, 245, 255);
+    --inactive-button: var(--icon-background);
+}
+
+body {
+    z-index: 0;
+    margin: 0%;
+    border: 0;
+    background-color: white;
+    font-family: 'Roboto', 'Sans-serif';
+    color: var(--text-color);
+    font-size: large;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--niceblue);
+    font-size: 350%;
+}
+
+h3 {
+    color: var(--niceblue);
+    font-size: larger;
+}
+
+i {
+    color: var(--highlight);
+    background-color: var(--icon-background);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 30px;
+    width: fit-content;
+}
+
+button {
+    background-color: var(--inactive-button);
+    padding: 10%;
+    border-radius: 10px;
+    border-style: hidden;
+    color: var(--highlight);
+    /* font-weight: 700; */
+}
+
+#panel2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    z-index: 100;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.nav-item {
+    margin: auto;
+    font-weight: 700;
+    font-size: x-large;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.nav-header {
+    align-self: flex-start;
+    color: var(--highlight);
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-right: 30%;
+    margin-left: 5%;
+}
+
+.nav-button {
+    margin-right: 7%;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--highlight);
+    font-weight: 700;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    box-shadow: 0px 0px 9px 2px #ababab46;
+    font-size: x-large;
+}
+
+.gold {
+    font-size: 20px;
+    color: gold;
+    background-color: rgba(255, 248, 222, 0.8);
+}
+
+.badges {
+    margin-top: 20%;
+}
+
+.badges span {
+    color: var(--niceblue);
+}
+
+.panel {
+    display: flex;
+    flex-direction: row;
+}
+
+.panel img {
+    width: 45%;
+}
+
+.text-area {
+    display: flex;
+    flex-direction: column;
+    padding: 15%;
+}
+
+.schedule {
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+    width: 60vw;
+    border-radius: 5px;
+    top: 90%;
+    position: absolute;
+    background-color: white;
+    height: 20%;
+    align-items: center;
+    box-shadow: 0 20px 30px rgba(0, 0, 255, 0.1);
+}
+
+#panel1 .icon-header {
+    margin-left: 0;
+}
+
+.schedule button {
+    margin: 1% auto 1% auto;
+    padding: 2% 5% 2% 5%;
+    height: fit-content;
+}
+
+.schedule div {
+    display: flex;
+    flex-direction: row;
+}
+
+.schedule div i {
+    height: fit-content;
+}
+
+.schedule div div {
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    margin: auto;
+}
+
+.schedule div div p {
+    margin-bottom: 0;
+}
+
+.schedule div div h2 {
+    margin-top: 0;
+}
+
+#icon {
+    margin: 1rem;
+}
+
+#laboratories {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#laboratories img {
+    filter: grayscale(100%) opacity(10%);
+    max-width: 15%;
+    margin: auto;
+}
+
+.panel-full {
+    width: 100%;
+}
+
+.panel-full .text-area {
+    width: 45%;
+    margin-left: 5%;
+    padding: 0%;
+}
+
+.icon-card {
+    display: flex;
+    padding: 3%;
+    height: 100%;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+    height: 100%;
+    width: 15%;
+    justify-items: left;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 255, 0.1);
+    border-width: 1px;
+    box-shadow: 0px 0px 1px 1px #f1f1f1;
+}
+
+.icon-card:hover {
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 255, 0.1);
+}
+
+.reasons-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.emergency-contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50%;
+    width: 100%;
+    padding: 0;
+}
+
+.emergency-contacts .card {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 40%;
+    padding: 5%;
+    border-color: var(--alpha-highlight);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.emergency-contacts .card:hover {
+    box-shadow: 0px 5px 10px 9px var(--alpha-highlight);
+}
+
+.icon-header {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-header h4 {
+    color: var(--highlight);
+    margin-bottom: 0;
+    font-size: x-large;
+}
+
+.icon-header i {
+    margin: auto 10% auto auto;
+    font-size: 30px;
+}
+
+.icon-header .content {
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+}
+
+#panel3 .text-area{
+    width: 100%;
+    padding:10%;
+}
+
+.blue-button {
+    background-color: var(--highlight);
+    color: white;
+}
+
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    height: 100%;
+}
+
+.accordion-container div {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-color: var(--alpha-highlight);
+    border-width: 1px;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10%;
+    width: 100%;
+}
+
+.accordion-container div h4 {
+    margin: auto;
+    color: var(--niceblue);
+}
+
+.small {
+    font-size: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    font-size: larger;
+}
+
+.footer .first {
+    margin: auto 15% auto 5%;
+}
+
+.footer p {
+    width: 40%;
+}
+
+.footer .first h2 {
+    margin: auto auto auto 0;
+    color: var(--highlight);
+}
+
+.footer div {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer h2 {
+    color: var(--niceblue);
+}
+
+.licenses {
+    display: flex;
+    flex-direction: row;
+    font-size: larger;
+}
+
+.licenses p {
+    margin-right: 50%;
+    margin-left: 5%;
+    width: fit-content;
+}
+
+.licenses a {
+    margin: auto
+}
